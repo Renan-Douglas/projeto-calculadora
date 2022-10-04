@@ -39,13 +39,20 @@
         }
 
         svg#calculadora-hcode {
-            max-width: 500px;
-            min-width: 300px;
+            width: 500px;
             margin: auto;
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+        }
+
+        @media screen and (min-width: 150px) and (max-width: 500px) {
+
+            svg#calculadora-hcode {
+                width: 303.98px;
+            }
+
         }
 
         code,
