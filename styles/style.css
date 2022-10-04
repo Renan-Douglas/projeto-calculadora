@@ -25,6 +25,7 @@
 
         body {
             margin: 0;
+            padding: 0px;
         }
 
         h1 {
@@ -35,6 +36,16 @@
         hr {
             box-sizing: content-box;
             height: 0
+        }
+
+        svg#calculadora-hcode {
+            max-width: 500px;
+            min-width: 300px;
+            margin: auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
 
         code,
