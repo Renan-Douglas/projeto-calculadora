@@ -47,6 +47,12 @@ class CalcController {
 
     }
 
+    getLastOperation(){
+
+        this._operation
+
+    }
+
     addOperation(value){
 
         this._operation.push(value);
