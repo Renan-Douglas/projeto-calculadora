@@ -89,7 +89,7 @@ class CalcController {
 
             let newValue = this.getLastOperation().toString() + value.toString();
 
-            this._setLastOperation(parseInt(newValue));
+            this.setLastOperation(parseInt(newValue));
             
         }
 
