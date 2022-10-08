@@ -144,12 +144,12 @@ class CalcController {
         
         for (let i = this._operation.length-1; i >= 0; i--){
 
-                if (this.isOperator(this._operation[i]) == isOperator) {
+            if (this.isOperator(this._operation[i]) == isOperator) {
 
-                    lastItem = this._operation[i];
+                lastItem = this._operation[i];
 
-                    break;
-                    
+                break;
+    
             }
 
         }
