@@ -110,7 +110,7 @@ class CalcController {
 
             last = this._operation.pop();
 
-            this.lastNumber = this.getResult();
+            this._lastNumber = this.getResult();
 
         } else if (this._operation.length == 3) {
 
