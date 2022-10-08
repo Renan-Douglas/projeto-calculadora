@@ -184,7 +184,7 @@ class CalcController {
 
             } else if (isNaN(value)){
 
-                console.log('outra coisa', value);
+                console.log("outra coisa",value);
 
             } else {
 
@@ -196,7 +196,7 @@ class CalcController {
 
         } else {
 
-            if (this.isOperator(value)) {
+            if (this.isOperator(value)){
 
                 this.pushOperation(value);
 
