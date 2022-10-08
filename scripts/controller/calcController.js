@@ -255,7 +255,7 @@ class CalcController {
             case 'igual':
                 this.calc();
                 break;
-            
+
             case 'ponto':
                 this.addOperation('.');
                 break;
