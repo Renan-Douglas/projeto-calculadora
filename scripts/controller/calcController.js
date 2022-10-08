@@ -95,6 +95,14 @@ class CalcController {
         
         this._lastOperator = this.getLastItem();
 
+        if (this._operation.length < 3) {
+
+            let firstItem = this._operation[0];
+
+            this._operation = [firstItem, this._lastOperator, this._lastNumber];
+
+        }
+
         if (this._operation.length > 3) {
 
             last = this._operation.pop();
@@ -134,12 +142,18 @@ class CalcController {
 
         let lastItem;
         
-        for (let i = this._operation.length-1; i >= 0; i--){
+        for (let i = this._operation.length -1; i >= 0; i--){
 
                 if (this.isOperator(this._operation[i]) == isOperator) {
                     lastItem = this._operation[i];
                     break;
             }
+
+        }
+
+        if (!lastItem) {
+
+            lastItem = (isOperator) ? this._lastOperator : this._lastNumber;
 
         }
 
