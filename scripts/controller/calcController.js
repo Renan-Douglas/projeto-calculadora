@@ -2,6 +2,9 @@ class CalcController {
 
     constructor(){
 
+        this._lastOperator = '';
+        this._lastNumber = '';
+        
         this._operation = [];
         this._locale = 'pt-BR';
         this._displayCalcEl = document.querySelector("#display");
@@ -114,9 +117,6 @@ class CalcController {
             this.lastNumber = this.getLastItem(false);
 
         }
-
-        console.log('_lastOperator', this._lastOperator);
-        console.log('_lastnumber', this._lastNumber);
 
         let result = this.getResult();
 
