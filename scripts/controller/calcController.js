@@ -182,7 +182,7 @@ class CalcController {
 
                 this.setLastOperation(value);
 
-            } else if(isNaN(value)){
+            } else if (isNaN(value)){
 
                 console.log('outra coisa', value);
 
