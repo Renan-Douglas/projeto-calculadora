@@ -109,12 +109,12 @@ class CalcController {
         if (this._operation.length > 3) {
 
             last = this._operation.pop();
-            
+
             this.lastNumber = this.getResult();
 
-        } else if (this._operation.length == 3){
+        } else if (this._operation.length == 3) {
 
-            this.lastNumber = this.getLastItem(false);
+            this._lastNumber = this.getLastItem(false);
 
         }
 
@@ -190,7 +190,7 @@ class CalcController {
 
                 this.pushOperation(value);
 
-                this.setLastNumberToDisplay()
+                this.setLastNumberToDisplay();
                 
             }
 
